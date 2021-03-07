@@ -1,0 +1,74 @@
+# # Zadanie 1
+# lista = ['Szybcy i Wsciekli 1', 'Szybcy i Wsciekli 2', 'Szybcy i Wsciekli 3', 'Szybcy i Wsciekli 4']
+# lista.reverse()
+# lista.append('Szybcy i wsciekli 7')
+# lista.append('Szybcy i wsciekli 6')
+# lista.append('Szybcy i wsciekli 5')
+# lista.append('Szybcy i wsciekli 9')
+# lista.append('Szybcy i wsciekli 8')
+# lista.append('Szybcy i wsciekli 10')
+# print(lista)
+
+# # Zadanie 2
+# slownik = {'nr1': 'Szybcy i Wsciekli 1', 'nr2': 'Szybcy i Wsciekli 2', 'nr3': 'Szybcy i Wsciekli 3', 'nr4': 'Szybcy i Wsciekli 4', 'nr5': 'Szybcy i Wsciekli 5', 'nr6': 'Szybcy i Wsciekli 6', 'nr7': 'Szybcy i Wsciekli 7', 'nr8': 'Szybcy i Wsciekli 8', 'nr9': 'Szybcy i wsciekli 9', 'nr10': 'Szybcy i wsiekli 10'}
+# print(slownik)
+# # klucz to nr w jakiej kolejnosci filmy powstawaly
+#
+# # Zadanie 3
+# Przedmioty = {'CAD': 'CAD Komputerowe wspomaganie projektowania', 'Rr': 'Rachunek rozniczkowy', 'Jn': 'Jezyk niemiecki', 'Kk': 'Kultura Kresow', 'Ps': 'Programowanie strukturalne', 'Md': 'Matematyka dyskretna', 'Wd': 'Wizualizacja danych'}
+# a = len(Przedmioty)
+# print(a)
+#
+# # Zadanie 4
+# liczba = input("Podaj liczbe:")
+# liczba = int(liczba)
+# liczba **= liczba
+# print(liczba)
+
+# # Zadanie 5
+# import sys as system
+# system.stdout.write("Podaj ciag znakow: ")
+# ciag = system.stdin.readline()
+# ile = ciag.count("a")
+# print(ile, 'znaków "a" w ciagu')
+#
+# # Zadanie 6
+# a = input('Podaj a: ')
+# b = input('Podaj b: ')
+# c = input('Podaj c: ')
+# a = int(a)
+# b = int(b)
+# c = int(c)
+# if (a % 2 == 0) & (b > c):
+#     print('jest ok')
+# else:
+#     print("jest blad")
+#
+# # Zadanie 7
+# Liczba = [4, 5.55, 29, 52, 2.79, 65, 66, 8.8]
+# i = 0
+# for x in range(1, 8, 1):
+#     print(Liczba[i] + Liczba[i - 1])
+#     i += 1
+
+# # Zadanie 8
+# lista = []
+# i = 0
+# while i!= 10:
+#     wartosc = input("Podaj liczbę: ")
+#     wartosc = float(wartosc)
+#     i+= 1
+#     if (wartosc % 1  ==  0 ):
+#         wartosc = int(wartosc)
+#         lista.append(wartosc)
+# print(lista)
+
+
+
+#
+# # Zadanie 10
+# a = input("podaj liczbę:")
+# try:
+#  a = int(a)
+# except ValueError:
+#  print("nie liczba")
