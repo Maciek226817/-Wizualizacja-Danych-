@@ -1,0 +1,84 @@
+# Zadanie 1
+# A = [1 - x for x in range(1, 11)]
+# print(A)
+# B = [4 ** x for x in range(0, 8)]
+# print(B)
+# C = [x for x in B if x % 2 == 0]
+# print(C)
+
+# Zadanie 2
+# import random
+# lista1 = [random.randint(1, 100) for _ in range(10)]
+# lista2 = [x for x in lista1 if x % 2 == 0]
+# print(lista2)
+#
+# Zadanie 3
+# slownik1 = {'Maslo': 'Szt', 'Woda': 'L', 'Mieso': 'Kg', 'Piwo': 'Btl'}
+# print(slownik1)
+# slownik2 = {key: value for value, key in slownik1.items()}
+# print(slownik2)
+#
+# Zadanie 4
+# def Trojkat_Prostokatny(A, B, C):
+#     if A == B == C:
+#         return 'Trojkat jest rownoboczny'
+#     if A >= B and A >= C:
+#         if A ** 2 == B ** 2 + C ** 2:
+#             return 'Trojkat jest prostokatny'
+#         else:
+#             return 'Trojkat nie jest prostokatny'
+#     elif B >= A and B >= C:
+#         if B ** 2 == A ** 2 + C ** 2:
+#             return 'Trojkat jest prostokatny'
+#         else:
+#             return 'Trojkat nie jest prostokatny'
+#     else:
+#         if C ** 2 == B ** 2 + A ** 2:
+#             return 'Trojkat jest prostokatny'
+#         else:
+#             return 'Trojkat nie jest prostokatny'
+# print(Trojkat_Prostokatny(3, 4, 5))
+# print(Trojkat_Prostokatny(10, 4, 1))
+# print(Trojkat_Prostokatny(9, 2, 18))
+#
+# Zadanie 5
+# def Pole_trapezu1(A = 10, B = 5, H = 2):
+#     return((A + B) * H)/2
+# print(Pole_trapezu1())
+# def Pole_trapezu2(A = 2, B = 7, H = 8):
+#     return((A + B) * H)/2
+# print(Pole_trapezu2())
+#
+# Zadanie 6
+# def iloczyn(A = 1, B = 4, ile = 10):
+#     for x in range(A, ile):
+#         print(x * B)
+# print(iloczyn(1, 4, 10))
+#
+# Zadanie 7
+# def iloczyn(* liczby):
+#     if len(liczby) != 3:
+#         print('Podaj trzy liczby!')
+#         return 0
+#     for x in range(liczby[0], liczby[2]):
+#         print(x * liczby[1])
+# print(iloczyn(1, 4, 10))
+#
+# Zadanie 8
+# def zliczanie (** zakupy):
+#     return len(zakupy.items()), sum(x for x in zakupy.values())
+# print(zliczanie(maslo=2, woda=3, mieso=7, piwo=3))
+#
+# Zadanie 9
+# from Ciagi import arytmetyczny, geometryczny
+# 
+# print(arytmetyczny.arytm())
+# print(geometryczny.geo())
+
+def geo():
+    print('WYRAZ An = a1 * q^(n-1))')
+    print('SUMA Sn = a1 * ((1 - q^n) / (1 - q))')
+
+def arytm():
+    print('WYRAZ An = a1 + ((n-1) * r)')
+    print('SUMA Sn = ((a1 + an) / 2) * n)')
