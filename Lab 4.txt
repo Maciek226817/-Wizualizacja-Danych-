@@ -1,0 +1,81 @@
+from random import*
+
+# Zadanie 1
+# plik = open("Wizualizacja.txt", "w")
+# for i in range(100):
+#     i = randint(1, 100)
+#     if i % 4 == 0:
+#         plik.write(str(i) + '\n')
+# plik.close()
+
+# Zadanie 2
+# plik = open("Wizualizacja.txt", "r")
+# a = plik.readlines()
+# print(a)
+# plik.close()
+#
+# Zadanie 3
+# with open("Wizualizacja.txt", "a")as plik:
+#     plik.writelines (" gsgsdgsrgsgs\n sjgbskjdbgkksdg\n ")
+#
+# with open("Wizualizacja.txt", "r")as plik:
+#     b = plik.readlines()
+#     print(b)
+
+# Zadanie 4
+# class NaZakupy:
+#     def __init__(self, nazwa_produktu, ilosc, jednostka_miary, cena_jed):
+#         self.nazwa_produktu = nazwa_produktu
+#         self.ilosc = ilosc
+#         self.jednostka_miary = jednostka_miary
+#         self.cena_jed = cena_jed
+#
+#     def wyswietl_produkt(self):
+#         return self.nazwa_produktu
+#
+#     def ile_produktu(self):
+#         return f' {self.ilosc} {self.jednostka_miary}'
+#
+#     def ile_kosztuje(self):
+#         return self.cena_jed * self.ilosc
+#
+#
+# class = NaZakupy('kefir', 10, 'kg', 3)
+#
+# print(class.wyswietl_produkt())
+# print(class.ile_produktu())
+# print(class.ile_kosztuje())
+#
+# Zadanie 5
+
+#
+# # Zadanie 6
+# class Robaczek:
+#     def  __init__ ( self, x, y, krok):
+#         self.x = x
+#         self.y = y
+#         self.krok = krok
+# 
+#     def  idz_w_gore(self, ile_krokow):
+#         self.y += ile_krokow * self.krok
+# 
+#     def  idz_w_dol(self, ile_krokow):
+#         self.y -= ile_krokow * self.krok
+# 
+#     def  idz_w_lewo(self, ile_krokow):
+#         self.x -= ile_krokow * self.krok
+# 
+#     def  idz_w_prawo(self, ile_krokow):
+#         self.x += ile_krokow * self.krok
+# 
+#     def  pokaz_gdzie_jestes(self):
+#         return f'( { self.x }, {self.y})'
+# 
+# 
+# a = Robaczek(0, 0, 1)
+# 
+# a.idz_w_gore(15)
+# a.idz_w_prawo(5)
+# a.idz_w_lewo(20)
+# a.idz_w_dol(10)
+# print(a.pokaz_gdzie_jestes())
