@@ -1,0 +1,31 @@
+import numpy as np
+
+# # zadanie 1
+# tab = 3 ** np.arange(15)
+# print(tab)
+# # zadanie 2
+# a = np.array([0.1, 1.3, 5.7, 5.1])
+# b = a.astype("int64")
+# print(a)
+# print(a.dtype)
+# print(b)
+# print(b.dtype)
+# # zadanie 3
+# n = int(input("Liczba całkowita:"))
+# a, b = np.mgrid[1: n, 1: n]
+# print(b)
+# # zadanie 4
+# def potega(a, ile):
+#     b = np.logspace(1.0, ile, num=ile, dtype=int, base=a)
+#     print(b)
+# potega(5, 6)
+# potega(2, 6)
+# # zadanie5
+# def  macierzdiagonalna(x):
+#     wektor = np.arange(x, 0, - 1)
+#     macierzdiagonalna = np.diag(wektor)
+#     return macierzdiagonalna
+# print(macierzdiagonalna(5))
+# # zadanie6
+# tab = np.array([['t', 'a', 't', 'a'], ['o', 'a', 'Z', 'L' ], ['l', 'A', 'm', 'A'], ['a', 't', 'u', 'a']])
+# print(tab)
