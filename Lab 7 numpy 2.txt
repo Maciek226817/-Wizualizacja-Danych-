@@ -1,0 +1,76 @@
+import numpy as np
+# # zadanie 1
+# a = np.arange(3)
+# print(a)
+# b = np.array([4, 5, 6])
+# print(b)
+# c = a*b
+# print(c)
+# # zadanie 2
+# a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+# print(a)
+# b = np.array([[2, 2, 2, 2], [4, 4, 4, 4], [8, 8, 8, 8]])
+# print(b)
+# print("a\n")
+# print(a.min(axis=0))
+# print(a.min(axis=1))
+# print("b\n")
+# print(b.min(axis=0))
+# print(b.min(axis=1))
+# # zadanie 3
+# a = np.arange(3)
+# b = np.array([4, 5, 6])
+# print(a)
+# print(b)
+# print(a.dot(b))
+# # zadanie 4
+# a = np.array([-1, 1, 2])
+# b = np.array([5, np.pi, 6])
+# print(a)
+# print(b)
+# c = a*b
+# print(c)
+# # zadanie 5
+# y = np.array([[1, 2, 3], [4, 5, 6]])
+# print(y)
+# # print(np.sin(y))
+# a = np.sin(y)
+# print(a)
+# # zadanie 6
+# x = np.array([[1, 2, 3], [4, 5, 6]])
+# print(x)
+# b = np.cos(x)
+# print(b)
+# # zadanie 7
+# y = np.array([[1, 2, 3], [4, 5, 6]])
+# a = np.sin(y)
+# print(a)
+# x = np.array([[1, 2, 3], [4, 5, 6]])
+# b = np.cos(x)
+# print(b)
+# c = a+b
+# print(c)
+# # zadanie 8
+# a = np.arange(9).reshape(3, 3)
+# print(a)
+# print([x[0] for x in a])
+# print([x[1] for x in a])
+# print([x[2] for x in a])
+# # zadanie 9
+# a = np.arange(9).reshape(3, 3)
+# print(a)
+# for x in a.flat:
+#     print(x)
+#     print("")
+# # zadanie 10
+# a = np.arange(81).reshape(9,9)
+# print(a)
+# print(a.shape)
+# b = a.reshape((1,81))
+# print(b)
+# c = a.reshape((81,1))
+# print(c)
+# d = a.reshape((27,3))
+# print(d)
+# e = a.reshape((3,27))
+# print(e)
