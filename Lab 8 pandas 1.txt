@@ -1,0 +1,36 @@
+# import numpy as np
+# import pandas as pd
+# import xlrd
+# import openpyxl
+#
+# 
+# # zadanie 1
+# imiona = pd.ExcelFile("imiona.xlsx")
+# df = pd.read_excel(imiona, header=0)
+# print(df)
+#
+# # zadanie 2
+# print(df[df['Liczba'] > 1000])
+# print(df[df['Imie'] == 'MACIEJ'])
+# print(df.agg({'Liczba': ['sum']}))
+# print(df[((df.Rok >= 2000) & (df.Rok <= 2005))]. agg({'Liczba': ['sum']}))
+# print('CHLOPACY:', df[df.Plec == 'M']. agg({'Liczba': ['sum']}))
+# print('DZIEWCZYNKI:', df[df.Plec == 'K']. agg({'Liczba': ['sum']}))
+# print(df.loc[df[df.Plec == 'M']. groupby("Rok")["Liczba"]. idxmax()])
+# print(df.loc[df[df.Plec == 'K']. groupby("Rok")["Liczba"]. idxmax()])
+# print(df.loc[df[df.Plec == 'M']['Liczba']. idxmax()])
+# print(df.loc[df[df.Plec == 'K']['Liczba']. idxmax()])
+#
+# # zadanie 3
+# df = pd.read_csv('zamowienia.csv', skipinitialspace=True, sep=";")
+# print(df['Sprzedawca'].unique())
+# print(df.sort_values('Utarg', ascending=False).iloc[:5])
+# print(df.value_counts(subset='Sprzedawca'))
+# print(df.value_counts(subset='Kraj'))
+# print(df[((df['Data zamowienia'] >= '2005-01-01') & (df['Data zamowienia'] <= '2005-12-31') & (df['Kraj'] == 'Polska'))].agg({'Utarg':['sum']}))
+# print(df[((df['Data zamowienia'].str[:4] == '2004'))].agg({'Utarg': ['mean']}))
+# zamowienia_2004 = df[((df['Data zamowienia'] >= '2004-01-01') & (df['Data zamowienia'] <= '2004-12-31'))]
+# zamowienia_2004.to_csv("zamowienia_2004.csv", index=False)
+# zamowienia_2005 = df[((df['Data zamowienia'] >= '2005-01-01') & (df['Data zamowienia'] <= '2005-12-31'))]
+# zamowienia_2005.to_csv("zamowienia_2005.csv", sep=';', index=False)
+#
