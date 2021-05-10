@@ -1,0 +1,49 @@
+import numpy as np
+import pandas as pd
+import xlrd
+import openpyxl
+import matplotlib.pyplot as plt
+
+# # Zadanie 1
+# imiona = pd.ExcelFile("imiona.xlsx")
+# df = pd.read_excel(imiona, header = 0)
+# suma = df.groupby(['Rok']). agg({'Liczba': ['sum']})
+# wykres = suma.plot.line()
+# plt.title("URODZENIA")
+# plt.xticks(np.arange(2000, 2018, 2))
+# plt.xlabel("Lata")
+# plt.ylabel("Ilość")
+# plt.legend()
+# plt.show()
+
+# # Zadanie 2
+# imiona = pd.ExcelFile("imiona.xlsx")
+# df = pd.read_excel(imiona, header=0)
+# suma = df.groupby(['Plec']). agg({'Liczba': ['sum']})
+# wykres = suma.plot.bar()
+# plt.title("URODZENIA")
+# plt.xlabel("Płeć")
+# plt.ylabel("Liczba urodzeń")
+# plt.xticks(rotation=0)
+# plt.legend()
+# plt.show()
+
+# # Zadanie 3
+# imiona = pd.ExcelFile("imiona.xlsx")
+# df = pd.read_excel(imiona, header=0)
+# df = df[(df['Rok'] >= 2013) & (df['Rok'] <= 2017)]
+# suma = df.groupby(['Plec']). agg({'Liczba': ['sum']})
+# wykres = suma.plot.pie(subplots=True, autopct='%.1f%%', fontsize=20, figsize=(6, 6), legend=(0, 0))
+# plt.legend(loc="lower right")
+# plt.show()
+
+# # Zadanie 4
+# df = pd.read_csv ('zamowienia.csv', header=0, sep=";", decimal=',')
+# wykres = df.groupby(['Sprzedawca']). agg({'idZamowienia': ['count']})
+# wykres = wykres.plot.bar()
+# plt.title("ZAMOWIENIA")
+# plt.xlabel("Sprzedawca")
+# plt.xticks(rotation=15)
+# plt.ylabel("Liczba ")
+# plt.legend()
+# plt.show()
